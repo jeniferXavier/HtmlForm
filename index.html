@@ -32,19 +32,22 @@
 
             <label for="mobile">Mobile:</label>
             <input type="text" id="mobile" name="mobile" maxlength="10" required /><br/><br/>
-
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender" required><br/><br/>
-                <option value="male">
-                    Male
-                </option>
-                <option value="female">
-                    Female
-                </option>
-                <option value="other">
-                    Other
-                </option>
-            </select>
+            <label for="City">CurrentCity:</label>
+            <select>
+                <option selected disabled>--Select City--</option>
+                <option>New York</option>
+                <option>Chicago</option>
+                <option>Los Angeles</option>
+                <option>Washington DC</option>
+            </select><br/><br/>
+            <input type="radio" name="gender" id="male"> 
+            <label for="male">Male</label>
+            
+            <input type="radio" name="gender" id="female"> 
+            <label for="female">Female</label>
+            <br/><br/>
+            <label>Photo: <input type="file" accept=".jpg, .png"> </label><br/><br/>
+            <label><input type="checkbox" checked>: I Agree</label> 
             <br/><br/>
             <button type="submit">
                 Submit
