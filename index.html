@@ -5,33 +5,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
+    <link rel="stylesheet" href="CSS/style.css"/>
 </head>
 
 <body>
-    <div>
+    <div class="main">
         <h2>Registration Form</h2>
         <form action="">
-            <label for="first">First Name:</label>
-            <input type="text" id="first" name="first" required /><br/><br/>
+            <table>
+                <tr>
+                    <td>
+                        <label for="first">First Name:</label>
+                        <input type="text" id="first" name="first" required />
+                    </td>
+                    <td>
+                        <label for="last">Last Name:</label>
+                        <input type="text" id="last" name="last" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </td>
+                    <td>
+                        <label for="mobile">Mobile:</label>
+                        <input type="text" id="mobile" name="mobile" maxlength="10" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password"
+                                pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" 
+                                title="Password must contain at least one number, 
+                                one alphabet, one symbol, and be at 
+                                least 8 characters long" required />
+                    </td>
+                    <td>
+                        <label for="confirmpassword">Confirm Password:</label>
+                        <input type="password" id="confirmpassword" name="confirmpassword" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="City">CurrentCity:</label>
+                        <select>
+                            <option selected disabled>--Select City--</option>
+                            <option>New York</option>
+                            <option>Chicago</option>
+                            <option>Los Angeles</option>
+                            <option>Washington DC</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="gender" id="male"> 
+                        <label for="male" class="labelradio">Male</label>
+                        <input type="radio" name="gender" id="female"> 
+                        <label for="female" class="labelradio">Female</label>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Photo: <input type="file" accept=".jpg, .png"> </label>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><input type="checkbox" >: I Agree</label>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+           <!-- <label for="first">First Name:</label>
+            <input type="text" id="first" name="first" required />
 
             <label for="last">Last Name:</label>
-            <input type="text" id="last" name="last" required /><br/><br/>
+            <input type="text" id="last" name="last" required />
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required /><br/><br/>
+            <input type="email" id="email" name="email" required />
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password"
                    pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" 
                    title="Password must contain at least one number, 
                            one alphabet, one symbol, and be at 
-                           least 8 characters long" required /><br/><br/>
+                           least 8 characters long" required />
 
             <label for="confirmpassword">Confirm Password:</label>
-            <input type="password" id="confirmpassword" name="confirmpassword" required /><br/><br/>
+            <input type="password" id="confirmpassword" name="confirmpassword" required />
 
             <label for="mobile">Mobile:</label>
-            <input type="text" id="mobile" name="mobile" maxlength="10" required /><br/><br/>
+            <input type="text" id="mobile" name="mobile" maxlength="10" required />
             <label for="City">CurrentCity:</label>
             <select>
                 <option selected disabled>--Select City--</option>
@@ -39,16 +114,16 @@
                 <option>Chicago</option>
                 <option>Los Angeles</option>
                 <option>Washington DC</option>
-            </select><br/><br/>
+            </select>
             <input type="radio" name="gender" id="male"> 
             <label for="male">Male</label>
             
             <input type="radio" name="gender" id="female"> 
             <label for="female">Female</label>
-            <br/><br/>
-            <label>Photo: <input type="file" accept=".jpg, .png"> </label><br/><br/>
-            <label><input type="checkbox" checked>: I Agree</label> 
-            <br/><br/>
+            
+            <label>Photo: <input type="file" accept=".jpg, .png"> </label>
+            <label><input type="checkbox" checked>: I Agree</label> -->
+            
             <button type="submit">
                 Submit
             </button>
